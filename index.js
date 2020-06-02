@@ -73,7 +73,7 @@ cancelButton.addEventListener('click', cancel)
 // Add it as an event listener for 'keydown' events on document.
 function closeOnEsc(event) {
   debugger
-  if (/* key pressed was ESC */) {
+  if ( true /* key pressed was ESC */) {
     // close modal
   }
 }
