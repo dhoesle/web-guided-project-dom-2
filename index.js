@@ -15,11 +15,11 @@ document.getElementById('launchButton')
 //     console.log('This is better, can do it more than once')
 //   })
 
-document.addEventListener('click', function (event) {
-  console.log('the document got clicked')
-  console.log('this is this', this)
-  console.log('here is the target of the event', event.target)
-})
+// document.addEventListener('click', function (event) {
+//   console.log('the document got clicked')
+//   console.log('this is this', this)
+//   console.log('here is the target of the event', event.target)
+// })
 
 // 👉 TASK 2- Select the following elements from the DOM:
 
