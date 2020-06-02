@@ -45,6 +45,8 @@ const modalOpacity = document.querySelector('.modal-opacity')
 function launch(event) {
   // remove the 'off' classname from the modal
   modal.classList.remove('off')
+  successMessage.classList.add('off')
+  failureMessage.classList.add('off')
 }
 launchButton.addEventListener('click', launch)
 
