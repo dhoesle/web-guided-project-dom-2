@@ -3,11 +3,13 @@ console.log('project is up')
 // 👉 TASK 1- Demo handling click events on button#launchButton, using:
 //      - HTML
 //      - The DOM's element.onclick
-document.getElementById('launchButton')
-  .onclick = function (event) {
-    console.log('This is old school (JS)')
-  }
 //      - element.addEventListener()
+
+// document.getElementById('launchButton')
+//   .onclick = function (event) {
+//     console.log('This is old school (JS)')
+//   }
+
 // document.getElementById('launchButton')
 //   .addEventListener('click', function (event) {
 //     console.log('this', this)
