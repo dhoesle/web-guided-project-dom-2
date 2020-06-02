@@ -92,7 +92,11 @@ Array.from(document.all).forEach(element => {
 })
 modal.addEventListener('click', event => {
   console.log('hahaha, going to disrupt bubbling')
+  // short-circuits bubbling
   event.stopPropagation()
+
+  // this will prevent 'built-in' event handlers
+  event.preventDefault()
 })
 
 // 👉 TASK 8- Create a link and prevent its default behavior
