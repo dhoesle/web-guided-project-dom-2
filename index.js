@@ -42,6 +42,10 @@ const modalOpacity = document.querySelector('.modal-opacity')
 // 👉 TASK 3- Create a function that launches!
 // It should open the confirmation modal.
 // Add it as an event listener for click events on the launch button.
+function launch(event) {
+  // remove the 'off' classname from the modal
+  modal.classList.remove('off')
+}
 
 
 // 👉 TASK 4- Create a function to confirm the launch.
