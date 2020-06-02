@@ -53,7 +53,7 @@ launchButton.addEventListener('click', launch)
 // It should close the modal and display a success report.
 // Add it as a listener for clicks on the confirmation button.
 function confirm(event) {
-  modal.classList.add('off')
+  closeModal()
   successMessage.classList.remove('off')
 }
 confirmButton.addEventListener('click', confirm)
@@ -63,7 +63,7 @@ confirmButton.addEventListener('click', confirm)
 // It should close the modal and display a failure report.
 // Add it as a listener for clicks on the cancellation button.
 function cancel(event) {
-  modal.classList.add('off')
+  closeModal()
   failureMessage.classList.remove('off')
 }
 cancelButton.addEventListener('click', cancel)
