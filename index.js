@@ -90,6 +90,10 @@ Array.from(document.all).forEach(element => {
     console.log('\n')
   })
 })
+modal.addEventListener('click', event => {
+  console.log('hahaha, going to disrupt bubbling')
+  event.stopPropagation()
+})
 
 // 👉 TASK 8- Create a link and prevent its default behavior
 
