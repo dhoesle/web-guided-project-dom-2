@@ -46,7 +46,7 @@ function launch(event) {
   // remove the 'off' classname from the modal
   modal.classList.remove('off')
 }
-
+launchButton.addEventListener('click', launch)
 
 // 👉 TASK 4- Create a function to confirm the launch.
 // It should close the modal and display a success report.
