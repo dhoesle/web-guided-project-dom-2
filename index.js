@@ -10,7 +10,7 @@ document.getElementById('launchButton')
 //      - element.addEventListener()
 document.getElementById('launchButton')
   .addEventListener('click', function (event) {
-    console.log('target', event.target)
+    console.log('event object', event)
     console.log('This is better, can do it more than once')
   })
 
