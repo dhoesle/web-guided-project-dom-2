@@ -8,7 +8,11 @@ document.getElementById('launchButton')
     console.log('This is old school (JS)')
   }
 //      - element.addEventListener()
-
+document.getElementById('launchButton')
+  .addEventListener('click', function (event) {
+    console.log('target', event.target)
+    console.log('This is better, can do it more than once')
+  })
 
 // 👉 TASK 2- Select the following elements from the DOM:
 
