@@ -43,10 +43,8 @@ const modalOpacity = document.querySelector('.modal-opacity')
 // It should open the confirmation modal.
 // Add it as an event listener for click events on the launch button.
 function launch(event) {
-  // remove the 'off' classname from the modal
-  modal.classList.remove('off')
-  successMessage.classList.add('off')
-  failureMessage.classList.add('off')
+  openModal()
+  killReports()
 }
 launchButton.addEventListener('click', launch)
 
@@ -91,13 +89,14 @@ cancelButton.addEventListener('click', cancel)
 
 // 👉 TASK 10- [STRETCH] Create helper functions
 function openModal() {
-
+  modal.classList.remove('off')
 }
 
 function closeModal() {
-
+  modal.classList.add('off')
 }
 
 function killReports() {
-
+  successMessage.classList.add('off')
+  failureMessage.classList.add('off')
 }
