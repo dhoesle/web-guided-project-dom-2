@@ -8,11 +8,18 @@ document.getElementById('launchButton')
     console.log('This is old school (JS)')
   }
 //      - element.addEventListener()
-document.getElementById('launchButton')
-  .addEventListener('click', function (event) {
-    console.log('event object', event)
-    console.log('This is better, can do it more than once')
-  })
+// document.getElementById('launchButton')
+//   .addEventListener('click', function (event) {
+//     console.log('this', this)
+//     console.log('event object', event)
+//     console.log('This is better, can do it more than once')
+//   })
+
+document.addEventListener('click', function (event) {
+  console.log('the document got clicked')
+  console.log('this is this', this)
+  console.log('here is the target of the event', event.target)
+})
 
 // 👉 TASK 2- Select the following elements from the DOM:
 
